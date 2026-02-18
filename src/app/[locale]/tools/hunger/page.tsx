@@ -3,9 +3,14 @@ import type {AppLocale} from '@/i18n/routing';
 import {ToolHeader} from '@/components/tools/ToolHeader';
 import {HungerTool} from '@/components/tools/HungerTool';
 
-export default async function Page({params}: {params: {locale: AppLocale}}) {
-  setRequestLocale(params.locale);
-  const tMod = await getTranslations({locale: params.locale, namespace: 'modules'});
+type Params = {locale: AppLocale};
+type Props = {params: Params | Promise<Params>};
+
+export default async function Page({params}: Props) {
+  const {locale} = await Promise.resolve(params);
+  setRequestLocale(locale);
+
+  const tMod = await getTranslations({locale, namespace: 'modules'});
   return (
     <div>
       <ToolHeader
