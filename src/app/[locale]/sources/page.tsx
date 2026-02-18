@@ -1,15 +1,18 @@
-import {setRequestLocale} from 'next-intl/server';
+import {setRequestLocale, getTranslations} from 'next-intl/server';
 import type {AppLocale} from '@/i18n/routing';
 import {sources} from '@/data/sources';
 import {Card, CardContent, CardHeader, CardTitle} from '@/components/ui/Card';
-import {useTranslations} from 'next-intl';
-
 import {LinkButton} from '@/components/ui/LinkButton';
 
-export default function SourcesPage({params}: {params: {locale: AppLocale}}) {
-  setRequestLocale(params.locale);
-  const t = useTranslations('pages');
-  const c = useTranslations('common');
+type Params = {locale: AppLocale};
+type Props = {params: Params | Promise<Params>};
+
+export default async function SourcesPage({params}: Props) {
+  const {locale} = await Promise.resolve(params);
+  setRequestLocale(locale);
+
+  const t = await getTranslations({locale, namespace: 'pages'});
+  const c = await getTranslations({locale, namespace: 'common'});
 
   return (
     <div>
@@ -27,7 +30,7 @@ export default function SourcesPage({params}: {params: {locale: AppLocale}}) {
             </CardHeader>
             <CardContent>
               <LinkButton href={s.url} target="_blank" rel="noreferrer">
-                Open on Wiki
+                {c('openWiki')}
               </LinkButton>
             </CardContent>
           </Card>
