@@ -1,0 +1,132 @@
+{
+  "site": {
+    "name": "Ferramentas RK",
+    "tagline": "Ferramentas leves e baseadas na Wiki para Renaissance Kingdoms.",
+    "disclaimerShort": "Ferramenta de fã (não oficial). Sem afiliação com o jogo ou publicadores."
+  },
+  "nav": {
+    "home": "Início",
+    "sources": "Fontes",
+    "about": "Sobre",
+    "privacy": "Privacidade",
+    "cookies": "Cookies"
+  },
+  "common": {
+    "search": "Busca rápida",
+    "openWiki": "Open on Wiki",
+    "pending": "PENDENTE",
+    "desktopNote": "Pensado para funcionar acima da dobra no desktop.",
+    "learnMore": "Saiba mais",
+    "language": "Idioma",
+    "backHome": "Voltar para Início"
+  },
+  "ads": {
+    "placeholderTitle": "Ad space",
+    "placeholderBody": "Placeholder mode (AdSense disabled)."
+  },
+  "modules": {
+    "hunger": {
+      "title": "Hunger & Diet",
+      "desc": "Plan daily hunger points with a minimal food set from the Wiki."
+    },
+    "fields": {
+      "title": "Fields (Corn/Wheat)",
+      "desc": "Cycle checklist + timing and key notes from the Wiki."
+    },
+    "pigs": {
+      "title": "Pig Field",
+      "desc": "Feeding odds and slaughter yield stages."
+    },
+    "trust": {
+      "title": "Trust & Reputation",
+      "desc": "Weekly giving, receivable caps, and leveling requirements."
+    },
+    "simples": {
+      "title": "Simples Collection",
+      "desc": "Compare durations (web/AP) and see productivity ranges."
+    }
+  },
+  "home": {
+    "headline": "Ferramentas para jogadores de Renaissance Kingdoms",
+    "sub": "Módulos MVP: rápidos, responsivos e fundamentados na Wiki oficial.",
+    "cardsTitle": "Módulos",
+    "noResults": "Nenhum módulo encontrado."
+  },
+  "pages": {
+    "sourcesTitle": "Fontes",
+    "sourcesIntro": "Este projeto usa a Wiki oficial do RK como fonte única de verdade. A lista abaixo mostra o que foi utilizado.",
+    "aboutTitle": "Sobre & Disclaimer",
+    "aboutBody": "Este site é uma utilidade de fã (não oficial). Não é afiliado ao Renaissance Kingdoms, Celsius Online ou qualquer publicador. Marcas e conteúdo do jogo pertencem aos respectivos proprietários.",
+    "privacyTitle": "Política de Privacidade (texto-base)",
+    "privacyBody": "Não exigimos conta. Podemos armazenar sua preferência de idioma em localStorage/cookies. Se o AdSense estiver ativado, o Google pode definir cookies e coletar dados para personalização de anúncios, conforme as políticas do Google.",
+    "cookiesTitle": "Cookies (texto-base)",
+    "cookiesBody": "Usamos um cookie de locale para lembrar seu idioma. Se o AdSense estiver ativado, cookies adicionais podem ser definidos pelo Google."
+  },
+  "tools": {
+    "hunger": {
+      "title": "Hunger & Diet",
+      "pointsTitle": "Pontos de fome por dia",
+      "roleLabel": "Perfil / progressão",
+      "roleBeginner": "Iniciante / Camponês / Artesão (2 pontos)",
+      "roleAdvanced": "Classe média / Erudito após escolher um caminho (> nível 100) (3 pontos)",
+      "foodTitle": "Planner rápido (conjunto mínimo)",
+      "chooseLabel": "Escolha alimentos",
+      "resultTitle": "Total de pontos",
+      "reset": "Zerar",
+      "tipsTitle": "Notas da Wiki",
+      "tipHealth": "Se você não comer o suficiente, seu estado de saúde cai no dia seguinte (regras diferem abaixo/acima do nível 100).",
+      "foods": {
+        "bread": "Pão (+2)",
+        "milk": "Garrafa de leite (+1, +1 Inteligência)",
+        "fruit": "Fruta (+1, +1 Carisma)"
+      }
+    },
+    "fields": {
+      "title": "Fields (Corn/Wheat)",
+      "cornTitle": "Ciclo do campo de milho",
+      "wheatTitle": "Ciclo do campo de trigo",
+      "yieldPending": "Os intervalos de rendimento incluem \"??\" no artigo da Wiki — calculadora numérica de rendimento está PENDENTE.",
+      "cornDay1": "Dia 1: Coloque um saco de milho no inventário da propriedade; arar e semear (22h / 100 AP).",
+      "cornDays2_6": "Dias 2–6: Crescimento (sem ação).",
+      "cornDay7": "Dia 7: Colheita (22h / 100 AP).",
+      "wheatDay1": "Dia 1: Coloque um saco de trigo no inventário da propriedade; arar e semear (22h / 100 AP).",
+      "wheatDays2_9": "Dias 2–9: Crescimento (sem ação).",
+      "wheatDay10": "Dia 10: Colheita (22h / 100 AP)."
+    },
+    "pigs": {
+      "title": "Pig Field",
+      "feedingTitle": "Alimentação diária",
+      "grass": "Grama (grátis): 5/18 de chance de ganhar peso por dia",
+      "corn": "1 saco de milho por porco: 5/9 de chance de ganhar peso por dia",
+      "growthTitle": "Rendimento por estágio (meio quintal de porco)",
+      "note15": "O rendimento do segundo campo é reduzido em 15%."
+    },
+    "trust": {
+      "title": "Trust & Reputation",
+      "giveTitle": "Dar confiança por semana",
+      "base": "Base: 2 pontos de confiança/semana (domingo 17:00 → próximo domingo 17:00)",
+      "cha": "Conforme o carisma aumenta, a quantidade semanal também aumenta (máx 5 em carisma 255).",
+      "receivableTitle": "Máximo de confiança recebível (depende do nível)",
+      "reputationTitle": "Reputação e progressão",
+      "reqTitle": "Requisitos (níveis)",
+      "lvl3": "Nível III: ≥ 5 pontos de reputação (máximo pode vir de 3 pontos de confiança)",
+      "lvl4": "Nível IV: ≥ 15 pontos de reputação (máximo pode vir de 8 pontos de confiança)",
+      "lvl5": "Nível V: ≥ 35 pontos de reputação (máximo pode vir de 17 pontos de confiança)",
+      "lvl6": "Nível VI: ≥ 100 pontos de reputação (máximo pode vir de 30 pontos de confiança)",
+      "max255": "Máximo de reputação é 255 (inclui confiança).",
+      "cap0_10": "Níveis 0–10: 3",
+      "cap11_30": "Níveis 11–30: 17",
+      "cap31_50": "Níveis 31–50: 30",
+      "cap51_250": "Níveis 51–250: 40",
+      "cap251": "Níveis ≥ 251: 200"
+    },
+    "simples": {
+      "title": "Simples Collection",
+      "durTitle": "Durações",
+      "web": "Web: 2, 6, 12 e 22 horas",
+      "app": "App: 10, 30, 60 e 100 Pontos de Ação (AP)",
+      "prodTitle": "Produtividade (linhas selecionadas)",
+      "note": "A Wiki lista uma matriz; esta página mostra linhas da tabela sem inventar fórmulas."
+    }
+  }
+}

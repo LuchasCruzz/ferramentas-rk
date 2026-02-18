@@ -1,0 +1,132 @@
+{
+  "site": {
+    "name": "Herramientas RK",
+    "tagline": "Ayudas ligeras y basadas en la Wiki para Renaissance Kingdoms.",
+    "disclaimerShort": "Unofficial fan-made tool. Not affiliated with the game or its publishers."
+  },
+  "nav": {
+    "home": "Inicio",
+    "sources": "Fuentes",
+    "about": "Acerca de",
+    "privacy": "Privacidad",
+    "cookies": "Cookies"
+  },
+  "common": {
+    "search": "Búsqueda rápida",
+    "openWiki": "Open on Wiki",
+    "pending": "PENDIENTE",
+    "desktopNote": "Diseñado para funcionar sin desplazamiento en escritorio.",
+    "learnMore": "Más",
+    "language": "Idioma",
+    "backHome": "Volver al inicio"
+  },
+  "ads": {
+    "placeholderTitle": "Ad space",
+    "placeholderBody": "Placeholder mode (AdSense disabled)."
+  },
+  "modules": {
+    "hunger": {
+      "title": "Hambre y dieta",
+      "desc": "Planifica puntos diarios con un set mínimo de alimentos (Wiki)."
+    },
+    "fields": {
+      "title": "Campos (maíz/trigo)",
+      "desc": "Checklist del ciclo + tiempos (Wiki)."
+    },
+    "pigs": {
+      "title": "Campo de cerdos",
+      "desc": "Probabilidades de engorde y rendimiento por etapa."
+    },
+    "trust": {
+      "title": "Confianza y reputación",
+      "desc": "Límites y requisitos por nivel."
+    },
+    "simples": {
+      "title": "Recolección de simples",
+      "desc": "Duraciones (web/AP) y productividad (Wiki)."
+    }
+  },
+  "home": {
+    "headline": "Herramientas para jugadores de Renaissance Kingdoms",
+    "sub": "Módulos MVP: rápidos, responsivos y basados en la Wiki oficial.",
+    "cardsTitle": "Módulos",
+    "noResults": "No hay resultados."
+  },
+  "pages": {
+    "sourcesTitle": "Sources",
+    "sourcesIntro": "This project uses the official RK Wiki as the single source of truth. List below shows what was used.",
+    "aboutTitle": "About & Disclaimer",
+    "aboutBody": "This site is an unofficial fan-made utility. It is not affiliated with Renaissance Kingdoms, Celsius Online, or any publisher. Trademarks and game content belong to their respective owners.",
+    "privacyTitle": "Privacy Policy (base text)",
+    "privacyBody": "We do not require accounts. We may store your language preference in localStorage/cookies. If AdSense is enabled, Google may set cookies and collect data for ads personalization according to Google's policies.",
+    "cookiesTitle": "Cookies (base text)",
+    "cookiesBody": "We use a locale cookie to remember your chosen language. If AdSense is enabled, additional cookies may be set by Google."
+  },
+  "tools": {
+    "hunger": {
+      "title": "Hunger & Diet",
+      "pointsTitle": "Daily hunger points",
+      "roleLabel": "Role / progression",
+      "roleBeginner": "Beginner / Peasant / Artisan (2 points)",
+      "roleAdvanced": "Middle class / Scholar after choosing a path (> level 100) (3 points)",
+      "foodTitle": "Quick planner (minimal set)",
+      "chooseLabel": "Choose foods",
+      "resultTitle": "Total points",
+      "reset": "Reset",
+      "tipsTitle": "Wiki notes",
+      "tipHealth": "If you don't eat enough, your health state drops the next day (rules differ below/above level 100).",
+      "foods": {
+        "bread": "Loaf of bread (+2)",
+        "milk": "Bottle of milk (+1, +1 Intelligence)",
+        "fruit": "Fruit (+1, +1 Charisma)"
+      }
+    },
+    "fields": {
+      "title": "Fields (Corn/Wheat)",
+      "cornTitle": "Corn field cycle",
+      "wheatTitle": "Wheat field cycle",
+      "yieldPending": "Yield ranges include \"??\" in the Wiki article — numeric yield calculator is PENDING.",
+      "cornDay1": "Day 1: Put a bag of corn in property inventory; plough & sow (22h / 100 AP).",
+      "cornDays2_6": "Days 2–6: Growing (no action).",
+      "cornDay7": "Day 7: Harvest (22h / 100 AP).",
+      "wheatDay1": "Day 1: Put a bag of wheat in property inventory; plough & sow (22h / 100 AP).",
+      "wheatDays2_9": "Days 2–9: Growing (no action).",
+      "wheatDay10": "Day 10: Harvest (22h / 100 AP)."
+    },
+    "pigs": {
+      "title": "Pig Field",
+      "feedingTitle": "Daily feeding",
+      "grass": "Grass (free): 5/18 chance to gain weight per day",
+      "corn": "One bag of corn per pig: 5/9 chance to gain weight per day",
+      "growthTitle": "Yield by stage (half-cwt of pork)",
+      "note15": "Second field yield is reduced by 15%."
+    },
+    "trust": {
+      "title": "Trust & Reputation",
+      "giveTitle": "Giving trust per week",
+      "base": "Base: 2 trust points/week (Sunday 5:00 PM → next Sunday 5:00 PM)",
+      "cha": "As charisma increases, weekly trust giving increases too (max 5 at charisma 255).",
+      "receivableTitle": "Max trust points receivable (depends on level)",
+      "reputationTitle": "Reputation and leveling",
+      "reqTitle": "Requirements (levels)",
+      "lvl3": "Level III: ≥ 5 reputation points (max can be from 3 trust points)",
+      "lvl4": "Level IV: ≥ 15 reputation points (max can be from 8 trust points)",
+      "lvl5": "Level V: ≥ 35 reputation points (max can be from 17 trust points)",
+      "lvl6": "Level VI: ≥ 100 reputation points (max can be from 30 trust points)",
+      "max255": "Maximum reputation points possible is 255 (includes trust points).",
+      "cap0_10": "Levels 0–10: 3",
+      "cap11_30": "Levels 11–30: 17",
+      "cap31_50": "Levels 31–50: 30",
+      "cap51_250": "Levels 51–250: 40",
+      "cap251": "Levels ≥ 251: 200"
+    },
+    "simples": {
+      "title": "Simples Collection",
+      "durTitle": "Durations",
+      "web": "Web: 2, 6, 12 and 22 hours",
+      "app": "App: 10, 30, 60 and 100 Action Points (AP)",
+      "prodTitle": "Productivity (selected rows)",
+      "note": "The Wiki lists a matrix; this page shows the table rows without inventing extra formulas."
+    }
+  }
+}

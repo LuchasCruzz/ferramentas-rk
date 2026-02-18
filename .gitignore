@@ -1,0 +1,22 @@
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# next
+.next
+out
+
+# misc
+.DS_Store
+*.pem
+*.log
+
+# env
+.env*
+.vercel
+
+# editors
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json

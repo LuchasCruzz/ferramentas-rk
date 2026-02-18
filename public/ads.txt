@@ -1,0 +1,2 @@
+# Placeholder ads.txt
+# When you have AdSense approved, you may need to add your official ads.txt line here.

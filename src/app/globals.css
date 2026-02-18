@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --ink: 34 24 16;
+  --paper: 248 240 223;
+  --paper2: 242 232 210;
+  --seal: 123 27 31;
+  --seal2: 170 55 58;
+  --stone: 105 98 92;
+}
+
+html, body { height: 100%; }
+body {
+  color: rgb(var(--ink));
+  background:
+    radial-gradient(1200px 600px at 20% 20%, rgba(0,0,0,.04), transparent 60%),
+    radial-gradient(900px 500px at 80% 30%, rgba(0,0,0,.05), transparent 65%),
+    linear-gradient(180deg, rgb(var(--paper)) 0%, rgb(var(--paper2)) 70%, rgb(var(--paper)) 100%);
+}
+
+.parchment {
+  background:
+    radial-gradient(800px 300px at 30% 10%, rgba(0,0,0,.05), transparent 55%),
+    radial-gradient(900px 300px at 70% 30%, rgba(0,0,0,.04), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.35), rgba(255,255,255,0)),
+    linear-gradient(180deg, rgba(0,0,0,.03), transparent 30%),
+    rgb(var(--paper));
+  border: 1px solid rgba(0,0,0,.10);
+}
+
+.ornate-divider{
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0,0,0,.25), transparent);
+}
+
+.seal-button{
+  position: relative;
+  background: radial-gradient(circle at 30% 30%, rgb(var(--seal2)), rgb(var(--seal)));
+  color: #fff;
+  border: 1px solid rgba(0,0,0,.25);
+  box-shadow: 0 10px 20px rgba(0,0,0,.18);
+}
+.seal-button:focus-visible{
+  outline: 3px solid rgba(0,0,0,.35);
+  outline-offset: 2px;
+}
+.seal-button::after{
+  content:'';
+  position:absolute;
+  inset: 6px;
+  border-radius: 9999px;
+  border: 1px dashed rgba(255,255,255,.55);
+  pointer-events:none;
+  mix-blend-mode: overlay;
+}
+
+.badge-coat{
+  background: linear-gradient(180deg, rgba(0,0,0,.10), transparent);
+  border: 1px solid rgba(0,0,0,.15);
+}
+
+.skip-link{
+  position:absolute;
+  left:-9999px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+.skip-link:focus{
+  position:fixed;
+  left:12px;
+  top:12px;
+  width:auto;
+  height:auto;
+  padding:10px 12px;
+  z-index:50;
+  background: rgb(var(--paper));
+  border: 1px solid rgba(0,0,0,.25);
+  border-radius: 10px;
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible{
+  outline: 3px solid rgba(0,0,0,.30);
+  outline-offset: 2px;
+}
