@@ -17,4 +17,3 @@ export default async function CookiesPage({params}: Props) {
     </div>
   );
 }
-
