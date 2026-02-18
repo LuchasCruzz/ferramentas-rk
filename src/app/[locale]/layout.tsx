@@ -5,12 +5,19 @@ import type {Metadata} from 'next';
 import {routing, type AppLocale} from '@/i18n/routing';
 import {SiteShell} from '@/components/layout/SiteShell';
 
+type LocaleParams = {locale: AppLocale};
+type Awaitable<T> = T | Promise<T>;
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({locale}));
 }
 
-export async function generateMetadata({params}: {params: {locale: AppLocale}}): Promise<Metadata> {
-  const {locale} = params;
+export async function generateMetadata({
+  params
+}: {
+  params: Awaitable<LocaleParams>;
+}): Promise<Metadata> {
+  const {locale} = await Promise.resolve(params);
   const tSite = await getTranslations({locale, namespace: 'site'});
 
   return {
@@ -29,9 +36,9 @@ export default async function LocaleLayout({
   params
 }: {
   children: React.ReactNode;
-  params: {locale: AppLocale};
+  params: Awaitable<LocaleParams>;
 }) {
-  const {locale} = params;
+  const {locale} = await Promise.resolve(params);
   setRequestLocale(locale);
 
   const messages = await getMessages();
