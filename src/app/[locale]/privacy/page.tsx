@@ -1,10 +1,14 @@
-import {setRequestLocale} from 'next-intl/server';
+import {setRequestLocale, getTranslations} from 'next-intl/server';
 import type {AppLocale} from '@/i18n/routing';
-import {useTranslations} from 'next-intl';
 
-export default function PrivacyPage({params}: {params: {locale: AppLocale}}) {
-  setRequestLocale(params.locale);
-  const t = useTranslations('pages');
+type Params = {locale: AppLocale};
+type Props = {params: Params | Promise<Params>};
+
+export default async function PrivacyPage({params}: Props) {
+  const {locale} = await Promise.resolve(params);
+  setRequestLocale(locale);
+
+  const t = await getTranslations({locale, namespace: 'pages'});
 
   return (
     <div className="parchment rounded-3xl p-6 shadow-parchment">
